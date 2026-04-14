@@ -5,7 +5,7 @@ import java.time.Month;
 
 public class App {
 	
-	static final int TOTAL_ELEMENTOS = 10;
+	static final int TOTAL_ELEMENTOS = 100;
 
 	public static void main(String[] args) {
 
@@ -178,6 +178,40 @@ public class App {
 			
 			numerosEnteros[i] = i + 1;
 		}
+		
+		// Mostrar los elementos del array original. Y aqui vamos a utilizar 
+		// una SENTENCIA FOR MEJORADA
+		
+		System.out.println("----------- Array Original ----------------");
+		
+		for ( int numeroEntero : numerosEnteros)
+			System.out.println(numeroEntero);
+		
+		/*
+		 * Utilizando una sentencia for clasica, recorrer el array numerosEnteros
+		 * y mostrar solamente los que sean pares */
+		
+		System.out.println("----------- Elementos que son par del array original ---------");
+		
+		for (int i = 0; i <= TOTAL_ELEMENTOS - 1; i++) {
+			if (numerosEnteros[i] % 2 == 0) {
+				// Si entramos en este bloque (llave de apertura y llave de cierre)
+				// quiere decir que el elemento del array numerosEnteros es par
+				System.out.println(numerosEnteros[i]);
+			}
+		}
+		
+		/*
+		 * 
+		 * Ejercicio # 3.
+
+			1- Comitear los cambios actuales del proyecto LearningJavaLanguage, 
+			poner como comentario, por ejemplo, “antes de realizar el ejercicio 3” 
+
+			2- Utilizar un bucle for mejorado para mostrar los elementos que 
+			son impares del array numerosEnteros y 
+			contar la cantidad de números impares encontrados
+		*/
 		
 	}
 }
