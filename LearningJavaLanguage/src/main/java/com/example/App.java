@@ -213,6 +213,19 @@ public class App {
 			contar la cantidad de números impares encontrados
 		*/
 		
+		System.out.println("---------- Ejercicio # 3 -----------------");
+		
+		int contadorImpares = 0;
+		
+		for ( int e : numerosEnteros ) {
+			if ( e % 2 != 0) {
+				contadorImpares++;
+				System.out.println(e);
+			}
+		}
+		
+		System.out.println("Total de impares es : " + contadorImpares);
+		
 	}
 }
 
