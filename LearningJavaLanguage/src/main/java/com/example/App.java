@@ -5,7 +5,7 @@ import java.time.Month;
 
 public class App {
 	
-	static final int TOTAL_ELEMENTOS = 10;
+	static final int TOTAL_ELEMENTOS = 100;
 
 	public static void main(String[] args) {
 
@@ -177,6 +177,22 @@ public class App {
 		for (int i = 0; i <= TOTAL_ELEMENTOS - 1; i++) {
 			
 			numerosEnteros[i] = i + 1;
+		}
+		//	Mostrar los elmentos del array original y aqui vamos utilizar
+		//  una sentencia FOR MEJORADA
+		System.out.println("--------------Array original---------------");
+		
+		for (int numeroEntero: numerosEnteros) 
+			System.out.println(numeroEntero);
+		
+		System.out.println("--------------Elementos que son par del Array original---------------");
+		/*Utilizando una sentencia for clasica, recorre el array numerosEnteros
+		 * y mostrar solamente los que sean pares
+		 * */
+		for (int i = 0; i <= TOTAL_ELEMENTOS -1; i++) {
+			if( numerosEnteros[i]%2 == 0) {
+				System.out.println("EL numero "+ numerosEnteros[i] + " es par");
+			}
 		}
 		
 	}
