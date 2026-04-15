@@ -88,18 +88,11 @@ public class App {
 			
 			/* Invocar o llamar el metodo printObject */
 			
-			String resultado = null;
 			
-		   	resultado = printObject(p1);
-		   	System.out.println(resultado);
+		   	System.out.println("El resultado es: " + printObject(p1));
+		   	System.out.println(printObject(e1));
+		   	System.out.println(printObject(emp1));
 		   	
-			resultado = printObject(e1);
-			System.out.println(resultado);
-			
-			resultado = printObject(emp1);
-			System.out.println(resultado);
-		
-		
 	}
 }
 
