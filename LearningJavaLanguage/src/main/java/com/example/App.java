@@ -255,7 +255,36 @@ public class App {
 		
 		System.out.println("El valor de b será: " + b);
 		
+		/* OPERADOR TERNARIO
+		 * 
+		 *  https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op2.html 
+		 *  
+		 *  Buscar ternary operator en la pagina 
+		 *  
+		 *  Este operador trabaja con tres operandos y es una alternativa al uso de
+		 *  la sentencia condicional if, y en ocasiones es la forma posible de 
+		 *  solucionar algun problema concreto, por ejemplo cuando se necesita
+		 *  retornar un valor en la misma sentencia 
+		 *  
+		 *  */
 		
+		String n1 = "Margarita";
+		
+		String resultado = n1.equals("Pepe") ? 
+				"Si, n1 tiene el valor de Pepe" :
+					"No, n1 no tiene el valor de Pepe"; 
+		
+		System.out.println(resultado);
+		
+		/* La condicion del operador ternario NO tiene que ir entre parentesis, 
+		 * y en la condicion podemos utilizar muchos operadores condicionales,
+		 * como AND (&&), OR (||), NOT (!), operadores relacionales (<, >, !=, etc.), 
+		 * pero el resultado
+		 * final tiene que ser un booleano, es decir, true or false */
+		
+		int resultado2 = b > a && n1.equals("Pepe") || b < a * 25 && b != 15 ? 10 : 50;
+		
+		System.out.println(resultado2);
 	}
 }
 
