@@ -96,6 +96,23 @@ public class App {
 		   	System.out.println(printObject(e1));
 		   	System.out.println(printObject(emp1));
 		   	
+		   	/* Ejercicio de la actividad del miercoles 15 de Abril 
+		   	 * 
+		   	 * 1 - Crear un array de Objetos y agregarle elementos de tipo Empleado
+		   	 * y Estudiante. Tres empleados, dos del genero HOMBRE y uno del genero
+		   	 * MUJER o OTRO,  y tres estudiantes, con todas las propiedades
+		   	 * de Persona en ambos casos
+		   	 * 
+		   	 *  2- Recorrer o Iterar el array utilizando una sentencia for mejorado 
+		   	 *  y para los estudiates obtener la media de las asignaturas matriculadas,
+		   	 *  y para los empleados obtener el salario medio de los empleados del genero 
+		   	 *  HOMBRE 
+		   	 *  
+		   	 *  Se sugiere utilizar Pattern Matching con instanceof en el momento de 
+		   	 *  recorrer/iterar el array */
+		   	
+		   	
+		   	
 	}
 }
 
